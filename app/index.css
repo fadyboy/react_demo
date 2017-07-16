@@ -46,7 +46,7 @@ a {
 	margin-bottom: 7px;
 }
 
-.avatar {
+.	 {
 	width: 150px;
 	border-radius: 50%;
 }
@@ -128,4 +128,22 @@ a {
 	text-align: center;
 	font-size: 30px;
 	font-weight: 200;
+}
+
+.reset {
+	border: none;
+	background: transparent;
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #d0021b;
+}
+
+.reset:hover{
+	cursor: pointer;
+}
+
+.avatar {
+	border-radius: 50%;
+	width: 150px;
 }

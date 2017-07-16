@@ -4,7 +4,10 @@
   "description": "Demo react application setup from scratch",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "build": "NODE_ENV='production' webpack -p",
+    "deploy": "npm run build && firebase deploy",
+    "firebase-init":"firebase login && firebase init"
   },
   "babel": {
     "presets": [
@@ -17,6 +20,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "prop-types": "^15.5.10",
+    "query-string": "^4.3.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.1.1"
@@ -27,6 +31,7 @@
     "babel-preset-env": "^1.5.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.1",
+    "firebase-tools": "^3.9.1",
     "html-webpack-plugin": "^2.28.0",
     "style-loader": "^0.17.0",
     "webpack": "^2.5.1",
